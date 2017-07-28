@@ -1,0 +1,148 @@
+html{
+    height: 100vh;
+}
+
+body{
+    /*background-image: url("/img/blue-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    min-height: 100vh;
+    position: relative;
+}
+
+#main-page-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27px;
+}
+
+small{
+    font-size: 10px;
+}
+
+a{
+    color: #000;
+}
+
+p{
+    font-size: 20px;
+}
+
+#top-nav{
+    padding-top: 1%;
+}
+
+.about{
+    padding-bottom: 20px;
+}
+
+#my-image>img{
+    max-height: 500px;
+}
+
+#name-input{
+    border-radius: 17px;
+    border: solid 1px black;
+}
+
+#message-input{
+    border-radius: 17px;
+    border: solid 1px black;
+}
+
+
+.shadow-bg{
+    border: solid 1px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+/*Customer Bootsrap*/
+.navbar-trans{
+    background-color: transparent;
+    margin-bottom: 5%;
+}
+
+.navbar-toggle{
+    border-color: #000;
+}
+
+.navbar-toggle .icon-bar{
+    background-color: #000;
+}
+
+.navbar-nav>li>a{
+    margin-left: 40px;
+}
+
+.navbar-brand{
+    font-size: 35px;
+}
+
+
+/* Large Devices */
+    @media only screen and (min-width : 1200px) {
+        .about{
+            padding-top: 5%;
+        }        
+
+        
+    }
+
+/*  Small Devices Tables*/
+@media only screen and (min-width: 480px){
+    .scene_element{
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    }
+
+    /** An element that fades in */
+    .scene_element--fadein {
+        animation-name: fadeIn;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        
+    }
+
+/* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        *{ font-size: 25px; }
+        .navbar-nav>li>a{ margin-left: 30px; }
+        .navbar-brand{ font-size: 25px; }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
+
+
+/*CSS Playground*/
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
