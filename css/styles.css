@@ -38,7 +38,7 @@ p{
     padding-top: 1%;
 }
 
-.about{
+#about{
     padding-bottom: 20px;
 }
 
@@ -98,7 +98,7 @@ p{
 /*  Small Devices Tables*/
 @media only screen and (min-width: 480px){
     .scene_element{
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     }
@@ -112,7 +112,6 @@ p{
 
 /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
-        
     }
 
 /* Medium Devices, Desktops */
@@ -135,6 +134,11 @@ p{
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
 
+    }
+
+/* Overwrite Bootstrap*/
+    @media only screen and (min-width: 768px){
+        .form-horizontal .control-label {padding-top: 0px;}
     }
 
 
